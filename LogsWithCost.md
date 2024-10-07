@@ -159,5 +159,3 @@ aws sns subscribe --topic-arn arn:aws:sns:your-region:your-account-id:critical-l
 - Set environment variables (`SNS_TOPIC_ARN`, `LOG_GROUP_NAME`, `LOG_STREAM_NAME`).
 
 --- 
-
-This version of the `README.md` includes a comprehensive section on costs, providing users with an understanding of the financial implications of using these AWS services. Let me know if you need any further adjustments!
