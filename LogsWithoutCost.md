@@ -24,20 +24,9 @@ This document explains how to gather logs from pods running on worker nodes in a
 
 ## **2. Python Script for Log Collection and Error Notification**
 
-The following Python script collects logs from each pod every 10 minutes, stores the logs in a file named after the pod (e.g., `podname.txt`), and checks the log content for specific keywords. If any log contains the keywords "localhost," "500," "400," or any query-related errors, the script sends an email notification.
+Python script collects logs from each pod every 10 minutes, stores the logs in a file named after the pod (e.g., `podname.txt`), and checks the log content for specific keywords. If any log contains the keywords "localhost," "500," "400," or any query-related errors, the script sends an email notification.
 
-### **2.1 Python Script:**
-
-
-# Main function
-
-
-### **2.2 Explanation of Script:**
-
-- **Logs collection:** Uses `kubectl` to get logs from each pod.
-- **Storage:** Logs are stored in `/var/log/` directory, with each pod's logs saved in a separate file named after the pod (`podname.txt`).
-- **Error checking:** The script checks for the keywords "localhost," "500," "400," and "query." If any of these are found in the logs, an email notification is sent.
-- **Email setup:** Configures the script to send an email using SMTP when errors are found.
+### **2.1 Working Python Script:**
 
 ---
 
