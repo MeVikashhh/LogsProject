@@ -1,7 +1,4 @@
-Here’s an updated `README.md` that includes a section on estimated costs associated with using AWS services for this log collection and notification system:
-
 ---
-
 # **EKS Cluster Log Collection, CloudWatch, and Error Notification via AWS SNS**
 
 This document explains how to collect logs from pods running on worker nodes in an Amazon EKS cluster, push those logs to Amazon CloudWatch, and automatically send an SMS notification via AWS SNS if specific keywords (e.g., "localhost," "500," "400," or query-related errors) are found in the logs. AWS Lambda will be used to process the logs.
